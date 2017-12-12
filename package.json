@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/chrinaldini/svg-checkbox/issues"
   },
-  "homepage": "https://github.com/chrinaldini/svg-checkbox#readme"
+  "homepage": "https://github.com/chrinaldini/svg-checkbox#readme",
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1"
+  }
 }
