@@ -1,0 +1,25 @@
+{
+  "name": "svg-checkbox",
+  "version": "1.0.0",
+  "description": "How to use SVG as a checkbox or radio button",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrinaldini/svg-checkbox.git"
+  },
+  "keywords": [
+    "svg",
+    "animation",
+    "form",
+    "elements"
+  ],
+  "author": "Christopher S. Nicolaysen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrinaldini/svg-checkbox/issues"
+  },
+  "homepage": "https://github.com/chrinaldini/svg-checkbox#readme"
+}
