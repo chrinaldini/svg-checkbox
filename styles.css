@@ -1,8 +1,20 @@
+html{
+    height: 100%;
+}
 body {
     font-family: Verdana;
     font-size: 16px;
+    height: 100%;
 }
 
+.center-everything{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Checkbox */
 .check-box-with-label {
     user-select: none;
     cursor: pointer;
