@@ -1,80 +1,60 @@
 body {
     font-family: Verdana;
     font-size: 16px;
-    background-color: beige;
-}
-.container.right{
-    float: right;
 }
 
-label.checkbox {
+.check-box-with-label {
     user-select: none;
     cursor: pointer;
-    margin-bottom: 0;
 }
-
-label.checkbox input{
+.check-box-with-label .check-box-with-label__input {
     position: absolute;
     opacity: 0;
 }
-
-label.checkbox input:checked + span svg polyline {
-    stroke-dashoffset: 0;
-}
-
-label.checkbox:hover > span:first-of-type svg path {
-    stroke-dashoffset: 0;
-}
-
-/* Still frame */
-label.checkbox > span:first-of-type {
+/* SVG container */
+.check-box-with-label .check-box-with-label__svg-container {
+    vertical-align: middle;
+    margin-right: .3rem;
     position: relative;
-    top: 2px;
-    float: left;
-    margin-right: 8px;
-    width: 16px;
-    height: 16px;
-    border: 2px solid #C8CCD4;
-    border-radius: 3px;
+    top: 4px;
 }
-label.checkbox input:checked + span {
-    border-color: #20C2E0;
-}
-
-label.checkbox > span:first-of-type svg {
-    position: absolute;
-    top: -2px;
-    left: -2px;
-}
-
-/* Animated frame */
-label.checkbox > span:first-of-type svg path {
-    fill: rgba(32,194,224,0);
-    stroke: #20C2E0;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-dasharray: 71px;
-    stroke-dashoffset: 71px;
-    transition: all .3s ease;
-}
-label.checkbox input:checked + span svg path {
-    fill: rgba(32,194,224,1);
-}
-
-/* Check mark */
-label.checkbox > span:first-of-type svg polyline {
+/* SVG parts */
+.check-box-with-label .check-box-with-label__frame {
     fill: none;
-    stroke: #FFF;
+    stroke: #808281;
+    stroke-width: 2px;
+    transition: stroke .3s ease;
+}
+.check-box-with-label:hover .check-box-with-label__frame {
+    stroke: #8d16d0;
+}
+.check-box-with-label .check-box-with-label__check-mark {
+    fill: none;
+    stroke: #8d16d0;
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-dasharray: 18px;
-    stroke-dashoffset: 18px;
-    transition: all .6s ease;
+    stroke-dasharray: 105%;
+    stroke-dashoffset: 105%;
+    transition: stroke-dashoffset .3s ease;
 }
-
-label.checkbox > span:nth-of-type(2) {
+.check-box-with-label .check-box-with-label__input:checked + .check-box-with-label__svg-container .check-box-with-label__check-mark {
+    stroke-dashoffset: 0%;
+}
+.check-box-with-label > .check-box-with-label__label-text {
     pointer-events: none;
     vertical-align: middle;
 }
+/* Takk for meg animation */
+
+.takk{
+    fill: none;
+    stroke: #8d16d0;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 105%;
+    stroke-dashoffset: 105%;
+    transition: stroke-dashoffset 3s ease;
+}
+
